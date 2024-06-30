@@ -323,7 +323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a169fd071839b2f4890f11ac4ec03bd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 5
   _speedRampUpCurve:
     serializedVersion: 2
     m_Curve:
@@ -348,8 +348,10 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _timeToMaxSpeed: 20
-  _speedMultiplier: 20
+  _timeToMaxSpeed: 40
+  _speedMultiplier: 50
+  _pointManager: {fileID: 11400000, guid: 9003576030fc1384280d0de14a7d76bb, type: 2}
+  _maxPointSpeed: 60
 --- !u!114 &8319752034573491944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,7 +386,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   listAnnotation: {fileID: 0}
-  _maxAngle: 50
+  _maxAngle: 90
+  InvertVertical: 1
+  _maxHorizontalAngle: 40
+  _horizontolDeadZoneDegrees: 5
 --- !u!1 &5117350959233463969
 GameObject:
   m_ObjectHideFlags: 0
