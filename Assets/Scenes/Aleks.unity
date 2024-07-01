@@ -566,36 +566,6 @@ PrefabInstance:
       propertyPath: m_LookAt
       value: 
       objectReference: {fileID: 4166415709934974589}
-    - target: {fileID: 3584460601634846836, guid: 0932ded4ac508c94a89f2f96c6f7e418,
-        type: 3}
-      propertyPath: m_ScreenX
-      value: 0.5018066
-      objectReference: {fileID: 0}
-    - target: {fileID: 3584460601634846836, guid: 0932ded4ac508c94a89f2f96c6f7e418,
-        type: 3}
-      propertyPath: m_ScreenY
-      value: 0.519
-      objectReference: {fileID: 0}
-    - target: {fileID: 3584460601634846836, guid: 0932ded4ac508c94a89f2f96c6f7e418,
-        type: 3}
-      propertyPath: m_DeadZoneWidth
-      value: 0.029469637
-      objectReference: {fileID: 0}
-    - target: {fileID: 3584460601634846836, guid: 0932ded4ac508c94a89f2f96c6f7e418,
-        type: 3}
-      propertyPath: m_SoftZoneWidth
-      value: 0.19519481
-      objectReference: {fileID: 0}
-    - target: {fileID: 3584460601634846836, guid: 0932ded4ac508c94a89f2f96c6f7e418,
-        type: 3}
-      propertyPath: m_DeadZoneHeight
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3584460601634846836, guid: 0932ded4ac508c94a89f2f96c6f7e418,
-        type: 3}
-      propertyPath: m_SoftZoneHeight
-      value: 0.21278867
-      objectReference: {fileID: 0}
     - target: {fileID: 6197895602588749971, guid: 0932ded4ac508c94a89f2f96c6f7e418,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -645,21 +615,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7715122474541676128, guid: 0932ded4ac508c94a89f2f96c6f7e418,
-        type: 3}
-      propertyPath: m_XDamping
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 7715122474541676128, guid: 0932ded4ac508c94a89f2f96c6f7e418,
-        type: 3}
-      propertyPath: m_YDamping
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 7715122474541676128, guid: 0932ded4ac508c94a89f2f96c6f7e418,
-        type: 3}
-      propertyPath: m_ZDamping
-      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

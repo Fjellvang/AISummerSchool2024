@@ -47,4 +47,5 @@ MonoBehaviour:
   _pointManager: {fileID: 11400000, guid: 9003576030fc1384280d0de14a7d76bb, type: 2}
   _skyboxChanger: {fileID: 0}
   _gameTime: 60
+  _timeLeft: {fileID: 11400000, guid: 17eea1d966d81274c844419c76a71c71, type: 2}
   GameOverPanel: {fileID: 0}

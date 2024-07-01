@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.IO;
 using System.Text;
+using UnityAtoms.BaseAtoms;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -13,7 +14,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private SkyboxChanger _skyboxChanger;
     [SerializeField] private float _gameTime = 60f;
-    private float _gameTimer;
+    [SerializeField]
+    FloatVariable _timeLeft;
     
     private string path = Application.dataPath + "/Maria/Ending.txt";
     
@@ -27,12 +29,13 @@ public class GameManager : MonoBehaviour
         _pointManager.ResetPoints();
         _skyboxChanger.SetRandomSkybox();
         _gameEnded = false;
+        _timeLeft.Value = _gameTime;
     }
 
     private void Update()
     {
-        _gameTimer += Time.deltaTime;
-        if (_gameTimer >= _gameTime && !_gameEnded)
+        _timeLeft.Value -= Time.deltaTime;
+        if (_timeLeft.Value <= 0 && !_gameEnded)
         {
             _gameEnded = true;
             StartCoroutine(FadeInEnumerator());
