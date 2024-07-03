@@ -35,7 +35,11 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         _timeLeft.Value -= Time.deltaTime;
-        if (_timeLeft.Value <= 0 && !_gameEnded)
+        if (_timeLeft.Value <= 0 && !_gameEnded 
+            #if UNITY_EDITOR
+            || Input.GetKeyDown(KeyCode.Space)
+            #endif
+            ) 
         {
             _gameEnded = true;
             StartCoroutine(FadeInEnumerator());
